@@ -124,7 +124,7 @@ VideoId: Video_id from object video
 * **Error Response:**  
   * **Code:** 404  
   **Content:** `{ message: "Tidak dapat menghapus Video"}`  
-```
+
 **GET /video/product**
 ----
   Returns all product in the system.
