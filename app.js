@@ -3,11 +3,13 @@ const express = require('express')
 const mongoose = require('mongoose')
 const mongoString = process.env.DATABASE_URL;
 const PORT = process.env.PORT;
-
+const cors = require("cors");
 
 
 const app = express();
 app.use(express.json())
+app.use(cors());
+
 
 
 mongoose.connect(mongoString);
