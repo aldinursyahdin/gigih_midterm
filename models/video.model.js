@@ -8,6 +8,19 @@ const videoSchema = new Schema(
                 type: String,
                 required:true,
             },
+        Title: {
+            type: String,
+            required: true,
+        },
+        Username: {
+            type: String,
+            required: true,
+        },
+        LinkVideo: {
+            type: String,
+            required: true,
+        }
+
 
         }, {
         timestamps: true,

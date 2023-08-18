@@ -8,7 +8,7 @@ const Schema = mongoose.Schema;
                 type:String,
                 required: true,
             },
-            Tittle: {
+            Title: {
                 type:String,
                 required: true,
             },

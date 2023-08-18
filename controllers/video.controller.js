@@ -5,10 +5,13 @@ const Product = require("../models/product.model")
 
 //Create a Video 
 exports.create = async (req, res, next) => {
-    const { UrlImageThumbnail } = req.body;
+    const { UrlImageThumbnail, Title, Username, LinkVideo  } = req.body;
 
     const video = new Video({
         UrlImageThumbnail,
+        Title, 
+        Username, 
+        LinkVideo,
     });
     try {
         await video.save();
@@ -137,7 +140,7 @@ exports.getComments = async (req, res) => {
 exports.postProduct = async (req, res) => {
     try {
         const { id } = req.params;
-        const { LinkProduct, Tittle, Price } = req.body;
+        const { LinkProduct, Title, Price } = req.body;
         const newProduct = new Product({
 
             LinkProduct,
