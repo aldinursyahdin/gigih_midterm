@@ -10,6 +10,9 @@ npm run start
 ```
 {
   UrlImageThumbnail: string
+  Title: String
+  Username: String
+  LinkVideo: String
 }
 ```
 
@@ -17,7 +20,7 @@ npm run start
 ```
 {
     LinkProduct: String
-    Tittle: String 
+    Title: String 
     Price: Number
     VideoId: Video_id from object video
 }
@@ -80,7 +83,10 @@ VideoId: Video_id from object video
 * **Data Params**  
 ```
   {
-    UrlImageThumbnail: string
+    "UrlImageThumbnail": string,
+    "Title": String,
+    "Username": String,
+    "LinkVideo": String
 }
   }
 ```
@@ -158,7 +164,7 @@ VideoId: Video_id from object video
 ```
  {
             "LinkProduct":String, 
-            "Tittle": String,
+            "Title": String,
             "Price": Number
 
  }
