@@ -144,7 +144,7 @@ exports.postProduct = async (req, res) => {
         const newProduct = new Product({
 
             LinkProduct,
-            Tittle,
+            Title,
             Price,
             VideoId: id,
         });
